@@ -27,9 +27,9 @@ config = {
             client: 'mysql',
             connection: {
                 host: '127.0.0.1',
-                user: process.env.MY_SQL_USER,
-                password: process.env.MY_SQL_PASSWORD,
-                database: process.env.MY_SQL_DATABASE,
+                user: process.env.MYSQL_USER,
+                password: process.env.MYSQL_PASSWORD,
+                database: process.env.MYSQL_DATABASE,
                 charset: 'utf8'
             },
             debug: false
