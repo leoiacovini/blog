@@ -11,7 +11,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # Configure MySQL
-sudo docker run --name blog-mysql -e MYSQL_ROOT_PASSWORD=$MY_SQL_ROOT_PASSWORD -e MYSQL_DATABASE=$MY_SQL_DATABASE -e MYSQL_USER=$MYSQL_USER -e MYSQL_PASSWORD=$MYSQL_PASSWORD -p 3306:3306 -d mysql
+sudo docker run --name blog-mysql -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD -e MYSQL_DATABASE=$MYSQL_DATABASE -e MYSQL_USER=$MYSQL_USER -e MYSQL_PASSWORD=$MYSQL_PASSWORD -p 3306:3306 -d mysql
 
 # Install NPM and Node JS LTS
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
