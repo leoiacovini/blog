@@ -19,7 +19,7 @@ sudo apt-get install -y nodejs
 
 cd ~/blog
 npm install --production
-npm install -g forever
+sudo npm install -g forever
 
 # Install Nginx
 sudo apt-get install -y nginx
@@ -32,5 +32,5 @@ sudo ln -s /etc/nginx/sites-available/ghost /etc/nginx/sites-enabled/ghost
 # Start Nginx and Ghost
 sudo cp ~/blog/upstart.conf /etc/init/ghost.conf
 sudo service nginx restart
-cd ~/blog
+cd ~/blog/
 NODE_ENV=production forever start index.js
