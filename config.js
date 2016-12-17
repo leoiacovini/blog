@@ -14,7 +14,7 @@ config = {
         url: 'http://leoiacovini.me',
         mail: {
             transport: 'SMTP',
-            from: '"Leo Iacovini\'s Blog" <blog@leoiacovini.me>'
+            from: '"Leo Iacovini\'s Blog" <blog@leoiacovini.me>',
             options: {
                 service: process.env.EMAIL_SERVICE,
                 auth: {

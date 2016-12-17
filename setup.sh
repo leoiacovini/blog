@@ -3,7 +3,7 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get install -y build-essential
-sudo apt-get install python-software-properties python g++ make
+sudo apt-get install -y python-software-properties python g++ make
 
 # Install Docker
 sudo apt-get install -y docker.io
